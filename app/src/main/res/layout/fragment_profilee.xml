@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bacground_card"
+        android:elevation="@dimen/_10sdp"
+
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="jaffer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/iv_image"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/email"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/specText"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_email"
+            android:padding="@dimen/_5sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Edit Profile"
+            android:textColor="#FF3D00" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/iv_image"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_person_black_24dp" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_profile"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bacground_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+                <RelativeLayout
+                    android:id="@+id/rl_update_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:foreground="?android:selectableItemBackground"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:visibility="visible">
+
+
+                    <ImageView
+                        android:id="@+id/iv_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_location_on_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/tv_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_update"
+                        android:fontFamily="@font/poppins_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/update_location"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_your_orders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:foreground="?android:selectableItemBackground"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+
+                    <ImageView
+                        android:id="@+id/iv_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_add_shopping_cart_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/txt_your_oredr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_order"
+                        android:fontFamily="@font/poppins_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/your_order"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_address_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+
+                    <ImageView
+                        android:id="@+id/iv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_book_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_address"
+                        android:fontFamily="@font/poppins_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/address_book"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_toRightOf="@id/iv_address"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/information"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_abt_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/about"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+                              </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/rl_how_itworks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/how_it_works"
+                        android:textColor="@color/black"
+                        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_faqs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/faqs"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_contact_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/contact_us"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+                         </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Logout"
+                        android:textColor="@color/redtext"
+                        android:textSize="@dimen/_13ssp"
+                        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#92303030"
+                android:centerColor="#9C303030"
+                android:endColor="@android:color/transparent"
+                android:angle="90" />
+            <corners android:radius="30dp" />
+        </shape>
+    </item>
+    <item
+        android:left="0dp"
+        android:right="0dp"
+        android:top="5dp"
+        android:bottom="0dp">
+        <shape android:shape="rectangle">
+         <!--   <corners android:radius="125dp" />-->
+            <corners android:topLeftRadius="0dp" android:topRightRadius="0dp"
+                android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp"/>
+            <solid android:color="#ffffffff" />
+            <item android:name="android:shadowColor">#ff4b4b4b</item>
+            <!-- TextView shadow offsets do not respect scale. -->
+            <item android:name="android:shadowDx">0</item>
+            <item android:name="android:shadowDy">71</item>
+
+        </shape>
+    </item>
+
+</layer-list>

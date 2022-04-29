@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:orientation="vertical"
+    tools:context=".activity.SignUpActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/personal_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="@string/personal_details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="@string/tell_us"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:theme="@style/MyAppTheme">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/name"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:textSize="@dimen/_14ssp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_name_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/enter_name"
+        android:textColor="@color/error"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyAppTheme"
+        android:layout_margin="@dimen/_5sdp">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/poppins_regular"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_email_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/enter_mail"
+        android:textColor="@color/error"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/poppins_regular"
+        android:foreground="?selectableItemBackground"
+        android:text="@string/bt_continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

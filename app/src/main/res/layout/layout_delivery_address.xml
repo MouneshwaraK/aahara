@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_cod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="@dimen/_15sdp">
+
+        <RadioButton
+            android:id="@+id/radio_btn_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyRadioButton"
+            android:checked="true"/>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Address "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_address1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_toRightOf="@+id/tv_address"-->
+<!--        android:fontFamily="@font/poppins_regular"-->
+<!--        android:text="Address "-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="14sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_address2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tv_address"-->
+<!--        android:fontFamily="@font/poppins_regular"-->
+<!--        android:layout_marginLeft="@dimen/_10dp"-->
+<!--        android:text="Address "-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="14sp"/>-->
+</RelativeLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:background="@color/gray_text" />
+</LinearLayout>

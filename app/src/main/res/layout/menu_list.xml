@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_screen"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/textViewHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Heading"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_toLeftOf="@+id/tv_no"
+            android:layout_alignParentLeft="true"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+     <!--   <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/textViewHead"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="@color/gray_text" />-->
+    </RelativeLayout>
+
+</LinearLayout>

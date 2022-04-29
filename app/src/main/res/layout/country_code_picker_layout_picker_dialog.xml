@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_rly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5374E"
+    android:orientation="vertical"
+   >
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="#D5374E">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <ImageView
+          android:id="@+id/iv_back"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:padding="@dimen/_5sdp"
+          android:src="@drawable/ic_arrow_back_black_24dp" />
+
+      <TextView
+          android:id="@+id/tv_back"
+          style="@style/ToolbarHear"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@id/iv_back"
+          android:text="@string/selectccp" />
+    </RelativeLayout>
+  </androidx.appcompat.widget.Toolbar>
+
+  <LinearLayout
+      android:id="@+id/ll_search"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/background_white_screen"
+      android:orientation="vertical">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_ccp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:clickable="true"
+        android:visibility="gone"
+        app:iconifiedByDefault="false"
+        android:focusableInTouchMode="true"
+        app:closeIcon="@drawable/close"
+        android:background="@drawable/edit_bg"
+        app:queryHint="Search">
+
+    </androidx.appcompat.widget.SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_ccp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+  <TextView
+      android:id="@+id/title_tv"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/_10sdp"
+      android:visibility="gone"
+      android:layout_below="@+id/search"
+      android:text="@string/select_country"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="@android:color/secondary_text_light"
+      />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+
+
+  <EditText
+      android:id="@+id/search_edt"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Search"
+      android:imeOptions="flagNoExtractUi"
+      android:maxLines="1"
+      android:visibility="visible"
+      android:singleLine="true"
+      android:background="@null"
+      android:drawablePadding="@dimen/_10sdp"
+      android:layout_margin="@dimen/_10sdp"
+      android:drawableLeft="@drawable/ic_search"
+      android:focusableInTouchMode="true"
+      android:textColor="@android:color/primary_text_light_nodisable"
+      />
+      <ImageView
+          android:id="@+id/iv_close"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_margin="@dimen/_5sdp"
+          android:visibility="gone"
+          android:src="@drawable/close"/>
+    </RelativeLayout>
+  <!--<android.support.v7.widget.RecyclerView-->
+      <!--android:id="@+id/country_dialog_rv"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="match_parent"-->
+      <!--android:layout_below="@+id/search_edt"-->
+      <!--android:dividerHeight="2dp"-->
+      <!--/>-->
+
+  <ListView
+      android:id="@+id/country_dialog_lv"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/search_edt"
+      android:divider="@null"/>
+
+  <TextView
+      android:id="@+id/no_result_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/search_edt"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/_30sdp"
+      android:text="@string/no_result_found"
+      android:textColor="@android:color/primary_text_light"
+      android:visibility="gone"
+      />
+  </LinearLayout>
+</LinearLayout>

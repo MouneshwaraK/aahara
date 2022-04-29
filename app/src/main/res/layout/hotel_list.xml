@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_drop_up_black_24dp"
+            android:rotation="-90"
+            android:id="@+id/img_downarrow"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/ic_arrow_drop_up_black_24dp"
+                android:id="@+id/img_uparrow"/>
+
+            <TextView
+                android:id="@+id/tv_bestseller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_downarrow"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Bestsellers"
+                android:textColor="@color/black" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_bestseller"
+                android:id="@+id/second_recycler">
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

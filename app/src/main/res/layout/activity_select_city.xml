@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SelectCityActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_save_changes"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/ll_list">
+  <!--      <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/btn_back"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"/>-->
+        <TextView
+            android:id="@+id/tv_select_city"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:gravity="center"
+            android:text="Select City to Continue"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/gray_text"
+            android:fontFamily="@font/poppins_regular"/>
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/unit_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save_changes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/poppins_bold"
+        android:foreground="?selectableItemBackground"
+        android:text="Update City"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

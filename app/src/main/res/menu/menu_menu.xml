@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/one"
+        android:title="BestSellers" />
+    <item
+        android:id="@+id/two"
+        android:title="Combos"/>
+    <item
+        android:id="@+id/three"
+        android:title="Egg Starters"/>
+    <item
+        android:id="@+id/four"
+        android:title="Starters" />
+    <item
+        android:id="@+id/five"
+        android:title="Main Course"/>
+    <item
+        android:id="@+id/six"
+        android:title="Egg Starters"/>
+    <item
+        android:id="@+id/seven"
+        android:title="Breads"/>
+    <item
+        android:id="@+id/eight"
+        android:title="Rice and Biriyani"/>
+    <item
+        android:id="@+id/nine"
+        android:title="Beverages"/>
+
+</menu>

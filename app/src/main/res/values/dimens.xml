@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="dimen_50dp">50dp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_15dp">15dp</dimen>
+    <dimen name="dimen_80dp">80dp</dimen>
+    <dimen name="dimen_18sp">18sp</dimen>
+    <dimen name="_50dp">50dp</dimen>
+    <dimen name="_70dp">70dp</dimen>
+    <dimen name="_22dp">22dp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_40sp">40sp</dimen>
+    <dimen name="_210dp">210dp</dimen>
+    <dimen name="_300dp">300dp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_30sp">30sp</dimen>
+    <dimen name="_4dp">4dp</dimen>
+
+
+    <dimen name="dimen_20">20dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="textSize_20sp">20sp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="textSize_30sp">30sp</dimen>
+    <dimen name="textSize_12sp">12sp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_15dp">15dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+
+    <dimen name="standard_55">55dp</dimen>
+    <dimen name="standard_105">105dp</dimen>
+    <dimen name="standard_155">155dp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font_22">22sp</dimen>
+    <dimen name="font_24">24sp</dimen>
+
+</resources>

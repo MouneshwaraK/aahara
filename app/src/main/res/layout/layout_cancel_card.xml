@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_15sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <TextView
+                android:id="@+id/chose_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:text="Re Order Sucessfull"
+                android:textColor="@color/imageCount"
+                android:textSize="@dimen/_14ssp" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/background_steps" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:text="OK"
+                android:textColor="@color/menu_selected"
+                android:textSize="@dimen/_14ssp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5374E"
+    tools:context=".LoginActivity"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_logo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/image_slide_smoothley"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_50sdp"
+            android:fontFamily="@font/roboto_black_italic"
+            android:text=" Aahara "
+            android:textColor="@color/white"
+            android:textSize="@dimen/_50sdp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/image_slide_smoothley"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <RelativeLayout
+            android:id="@+id/rl_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5dp"
+
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="@dimen/_5dp"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:layout_marginRight="@dimen/_5dp"
+                app:cardBackgroundColor="#ffff"
+
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/number"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:background="@drawable/round_rect_button"
+                        android:weightSum="5"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="+91"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_margin="10.00dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="@dimen/_14ssp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10.00dp"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Phone Number"
+                        android:textColorHint="#a6a6a6"
+                        android:textAlignment="textStart"
+                        android:background="@color/white"
+                        android:singleLine="true"
+                        android:focusable="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/enter_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_below="@+id/number"
+                        android:fontFamily="@font/poppins_regular"
+                        android:visibility="gone"
+                        android:text="Please Enter Number"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:id="@+id/wrong_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_below="@+id/enter_mail"
+                        android:fontFamily="@font/poppins_regular"
+                        android:visibility="gone"
+                        android:text="Please Enter Valid Number"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <Button
+                        android:id="@+id/login"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_below="@+id/wrong_mail"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/_20sdp"
+                        android:background="@drawable/round_rect_butoon_black"
+                        android:enabled="false"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/send_otp"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/_16sdp"
+                        android:textColor="@color/white" />
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:translationZ="@dimen/_15dp"
+                android:layout_marginBottom="@dimen/_30sdp"
+
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="By continuing, you agree to"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+
+
+                    >
+                    <TextView
+                        android:id="@+id/terms_and_conditions"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:text="Terms of Service"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="@dimen/_6sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:background="@drawable/dotted_underline"
+
+                        />
+                    <TextView
+                        android:id="@+id/privacy_policy"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="@dimen/_6sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:background="@drawable/dotted_underline"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        />
+<!--                    <TextView-->
+<!--                        android:id="@+id/content_policy"-->
+<!--                        android:layout_width="wrap_content"-->
+
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Content Policies"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:gravity="center"-->
+<!--                        android:fontFamily="@font/poppins_medium"-->
+<!--                        android:textSize="@dimen/_6sdp"-->
+<!--                        android:paddingBottom="@dimen/_10sdp"-->
+<!--                        android:background="@drawable/dotted_underline"-->
+<!--                        android:layout_marginLeft="@dimen/_10dp"-->
+<!--                        />-->
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+            </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+<!--Future updates Country code picker -->
+
+    <!--                                                    <com.codebele.aahara.custom.CountryCodePicker-->
+    <!--                                                        android:id="@+id/txt_code"-->
+    <!--                                                        android:layout_width="0dp"-->
+    <!--                                                        android:layout_weight="2.5"-->
+    <!--                                                        android:layout_height="wrap_content"-->
+    <!--                                                        android:layout_gravity="center"-->
+    <!--                                                        android:background="#ffffff"-->
+    <!--                                                        android:gravity="center"-->
+    <!--                                                        app:ccp_defaultNameCode="IN"-->
+    <!--                                                        app:ccp_showFlag="true"-->
+    <!--                                                        app:ccp_arrowSize="@dimen/_12ssp"-->
+    <!--                                                        app:ccp_textSize="@dimen/_14sdp"-->
+    <!--                                                        android:textAlignment="center"-->
+    <!--                                                        android:visibility="visible"-->
+    <!--                                                        android:layout_marginLeft="@dimen/_5sdp"-->
+    <!--                                                         />-->

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_location"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:id="@+id/ll_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Address"
+            android:paddingBottom="@dimen/_15dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:theme="@style/EditTextTheme" />
+
+        <Button
+            android:id="@+id/btn_place_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/poppins_bold"
+            android:foreground="?selectableItemBackground"
+            android:text="Save Address"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+</RelativeLayout>

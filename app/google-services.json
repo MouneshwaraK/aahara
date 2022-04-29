@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "689668253364",
+    "firebase_url": "https://aahara-692c2.firebaseio.com",
+    "project_id": "aahara-692c2",
+    "storage_bucket": "aahara-692c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689668253364:android:66cd36d54ee0219af799e1",
+        "android_client_info": {
+          "package_name": "com.codebele.aahara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689668253364-ff498i8jm6nj358skpsuj857t4bqipk8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBGoDtICWGWB7gzS-EGKSvdbU5eCEWKnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689668253364-ff498i8jm6nj358skpsuj857t4bqipk8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

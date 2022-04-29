@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingRight="@dimen/dimen_10dp"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+            <TextView
+                android:id="@+id/verification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/iv_back"
+                android:text="Enter Verification Code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true"
+        android:layout_above="@+id/ll_timer"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+        <!--    <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+                <TextView
+                    android:id="@+id/verification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="Enter Verification Code"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp" />
+            </RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_send_otp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="OTP sent to :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp" />
+
+                <TextView
+                    android:id="@+id/tv_send_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:text=" +91-9916778656"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_25sdp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/tv_password_error"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_below="@+id/mob_no"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:fontFamily="@font/poppins_medium"-->
+<!--                                    android:text="invalid password"-->
+<!--                                    android:textColor="@color/background"-->
+<!--                                    android:textSize="@dimen/_12ssp"-->
+<!--                                    android:visibility="gone" />-->
+
+                                <LinearLayout
+                                    android:id="@+id/lnrl_otp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/et_otp"
+                                        android:layout_width="@dimen/_80sdp"
+                                        android:layout_height="@dimen/_50sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="@dimen/_5sdp"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:gravity="center"
+                                        android:inputType="number"
+                                        android:maxLength="4"
+                                        android:textSize="@dimen/_16ssp" />
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tv_invalid"
+                                        android:textSize="@dimen/_16ssp"
+                                        android:textColor="@color/red"
+                                        android:text="@string/Invalid_Otp"
+                                        android:gravity="center"
+                                        android:visibility="gone"/>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_16sdp"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </Chronometer>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Didn't Receive the code?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tv_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:enabled="false"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toRightOf="@id/txt_otp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Resend now"
+                android:textColor="@color/resend_otp_textcolor"
+                android:textSize="@dimen/_12ssp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

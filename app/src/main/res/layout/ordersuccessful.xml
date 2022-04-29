@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_15sdp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <TextView
+                    android:fontFamily="@font/poppins_medium"
+                    android:id="@+id/tv_order_success"
+                    android:layout_below="@+id/mob_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="center_horizontal"
+                    android:text="Your Order has been placed Successfully" />
+
+                <Button
+                    android:id="@+id/btn_track"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Track Order"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_bg"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_alignParentBottom="true" />
+                <Button
+                    android:id="@+id/btn_home"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_bg"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_alignParentBottom="true" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
